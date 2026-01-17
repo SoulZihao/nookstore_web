@@ -1,0 +1,11 @@
+// 先引入变量（其他文件依赖变量）
+@use 'variables';
+
+// 再引入 reset（重置样式）
+@use 'reset';
+
+// 再引入布局
+@use 'layout';
+
+// 最后引入组件
+@use 'components';

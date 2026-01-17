@@ -1,0 +1,31 @@
+// SCSS 变量（给开发者用）
+$max-width: 1200px;
+
+$color-bg: #ffffff;
+$color-text: #1a1a1a;
+$color-primary: #0052cc;
+$color-muted: #666666;
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+
+$font-base: 'Inter', system-ui, sans-serif;
+
+// 输出为 CSS 变量（给浏览器 & JS 用）
+:root {
+  --max-width: #{$max-width};
+
+  --color-bg: #{$color-bg};
+  --color-text: #{$color-text};
+  --color-primary: #{$color-primary};
+  --color-muted: #{$color-muted};
+
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+
+  --font-base: #{$font-base};
+}

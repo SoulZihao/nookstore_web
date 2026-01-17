@@ -1,0 +1,31 @@
+@use 'variables';
+
+.main-nav {
+  a {
+    margin-left: variables.$space-sm;
+    text-decoration: none;
+    color: variables.$color-text;
+    font-weight: 500;
+
+    &:hover {
+      color: variables.$color-primary;
+    }
+  }
+}
+
+.feature-card {
+  padding: variables.$space-md;
+  background: #fff;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 4px;
+
+  h3 {
+    margin-bottom: variables.$space-sm;
+  }
+
+  p {
+    color: variables.$color-muted;
+    font-size: 0.95rem;
+  }
+}
