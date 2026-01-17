@@ -14,18 +14,101 @@
 }
 
 .feature-card {
-  padding: variables.$space-md;
   background: #fff;
-  border: 1px solid #eee;
+  padding: variables.$space-md;
+  border-radius: 8px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+}
+
+button {
+  background: variables.$color-primary;
+  color: #fff;
+  padding: variables.$space-sm variables.$space-md;
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: variables.$color-accent;
+  }
+}
+
+.product-card {
+  background: #fff;
+  padding: variables.$space-md;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  .product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: variables.$space-sm;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
 
   h3 {
-    margin-bottom: variables.$space-sm;
+    margin-bottom: variables.$space-xs;
+    color: variables.$color-text;
   }
 
   p {
     color: variables.$color-muted;
     font-size: 0.95rem;
+    margin-bottom: variables.$space-sm;
+  }
+
+  button {
+    background: variables.$color-primary;
+    color: #fff;
+    padding: variables.$space-xs variables.$space-md;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: variables.$color-accent;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: variables.$color-primary;
+  color: #fff;
+  padding: variables.$space-sm variables.$space-md;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+
+  &:hover {
+    background: variables.$color-accent;
   }
 }

@@ -12,77 +12,6 @@
   --font-base: Inter, system-ui, sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", system-ui, sans-serif;
-  color: #1a1a1a;
-  background: #ffffff;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.site-header {
-  border-bottom: 1px solid #eee;
-}
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.hero {
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #0052cc, #ff7a00);
-  color: #fff;
-  text-align: center;
-}
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  animation: fadeInUp 1s ease forwards;
-}
-.hero p {
-  font-size: 1.2rem;
-  animation: fadeInUp 1.2s ease forwards;
-}
-.hero button {
-  margin-top: 2rem;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-}
 .main-nav a {
   margin-left: 1rem;
   text-decoration: none;
@@ -182,4 +111,4 @@ button:hover {
   background: #ff7a00;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=components.css.map */
